@@ -5,6 +5,7 @@ package New;
  */
 abstract public class Unit {
     int currentHp;
+    int speed;
     //int hitPointsMax;
     public abstract void create();
 }

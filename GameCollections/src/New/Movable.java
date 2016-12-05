@@ -5,5 +5,5 @@ package New;
  */
 public interface Movable {
 
-    public void moveTo();
+    public void moveTo(int x, int y);
 }

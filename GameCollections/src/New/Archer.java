@@ -5,6 +5,8 @@ package New;
  */
 public class Archer extends Unit implements Movable, Fighter {
 
+    int x = 0, y = 0;
+
     @Override
     public void fight(Unit unit) {
         Attack a = new Attack(20);
@@ -13,7 +15,9 @@ public class Archer extends Unit implements Movable, Fighter {
     }
 
     @Override
-    public void moveTo() {
+    public void moveTo(int x, int y) {
+        this.x = x;
+        this.y = y;
         System.out.println("Move!");
     }
 

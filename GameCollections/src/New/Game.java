@@ -2,11 +2,17 @@ package New;
 
 import java.util.ArrayList;
 
+import java.util.Scanner;
 /**
  * Created by апаив on 31.10.2016.
  */
 public class Game {
-    public static void main(String args[]){
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        
         ArrayList<Archer> archerList = new ArrayList<Archer>();
         Archer archer1 = new Archer();
         Archer archer2 = new Archer();
@@ -25,7 +31,7 @@ public class Game {
         army.add(archer2);
         army.add(archer3);
         army.add(archer4);
-        army.moveTo();
+        army.moveTo(a,b);
 
 		/*for (Archer ar : archerList){
 			ar.moveTo();
@@ -45,7 +51,7 @@ public class Game {
         army1.add(sword3);
         army1.add(sword4);
         army1.add(sword5);
-        army1.moveTo();
+        army1.moveTo(a,b);
 
         army1.fight(archer1);
 
