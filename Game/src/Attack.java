@@ -9,6 +9,9 @@ public class Attack {
         this.damage = damage;
     }
     public void attack(Unit unit){
+        /*
+         * при этом unit.currentHp не изменится
+         */
         int b = unit.currentHp - this.damage;
         System.out.println("b = " + b);
     }
